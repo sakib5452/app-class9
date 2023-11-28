@@ -4,6 +4,7 @@ fun main(args: Array<String>) {
   multi()
   div()
   mul()
+    rec()
 }
 
 
@@ -35,4 +36,13 @@ fun div(){
     var b = 6
     var mul = a%b
     println("Total mul: ${mul}")
+}
+
+     var count = 0
+fun rec(){
+    count++
+    if(count<=5){
+        println("Hello "+count)
+rec()
+    }
 }
